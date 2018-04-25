@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    background-color: #232727;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    padding: 12px;
+    color: rebeccapurple;
+    font-size: 1.9em;
+}
+
+
+a {
+    color: rgb(214, 214, 214);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#main-title {
+    font-size: 1.5em;
+    border-top: 2px solid rgb(230, 230, 230);
+    text-align: center;
+}
+
+.article-text {
+    color: whitesmoke;
+}
+
+.article-border {
+    border-left: 2px solid whitesmoke;
+    padding: 5px;
+}
+
+.btn {
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 15px;
+    background-color: #F8F8F8;
+    color: #333;
+    border-radius: 2px;
+    cursor: pointer;
+    border-style: none;
+    font-size: inherit;
+    transition: opacity .2s, color .2s;
+}
+
+.btn-success, .btn-primary, .btn-delete {
+    color: White;
+}
+
+.btn-primary {
+    background-color: rebeccapurple;
+    opacity: 0.9;
+}
+
+.btn-success {
+    background-color: rgb(80, 165, 55);
+    opacity: 0.9;
+}
+
+.btn-delete {
+    background-color: rgb(209, 31, 8);
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn:active {
+    opacity: 1;
+}
+
+.buttons {
+    margin: 10px 0;
+}
+
+.box {
+    display: inline-block;
+    width: calc(33.334% - 16px);
+    background-color: #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 3px;
+}
+
+.box-title {
+    margin: 0;
+    padding: 10px 5px;
+}
+
+.box p {
+    background-color: white;
+    padding: 15px;
+    margin: 0;
+    border-radius: 3px;
+}
+
+.box-blue .box-title, .box-red .box-title {
+    color: white;
+}
+
+.box-blue {
+    background-color: rebeccapurple;
+}
+
+.box-red {
+    background-color: rgb(209, 31, 8);
+}
