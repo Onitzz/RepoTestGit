@@ -1,0 +1,108 @@
+body {
+    font: 16px Tahoma, Arial, sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* ------------------ */
+/* ------------------ */
+/* clearfix universel */
+/* ------------------ */
+/* ------------------ */
+.clearfix::after {
+    content: '';
+    clear: both;
+    overflow: auto;
+    zoom: 1;
+    display: table;
+    height:0;
+}
+
+.box {
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    transition: box-shadow .3s ease;
+    position: relative;
+}
+
+.box:hover {
+    box-shadow: 1px 1px 5px #ccc;
+}
+
+.box-red {
+    border-color: rgb(209, 31, 8);
+}
+
+.box-red .box-title {
+    background-color: rgb(209, 31, 8);
+    color: white;
+}
+
+.box-blue {
+    border-color: rebeccapurple;
+}
+
+.box-blue .box-title {
+    background-color: rgb(102, 50, 153);
+    color: white;
+}
+
+.box-author {
+    position: absolute;
+    top: -36px;
+    right: 25px;
+    z-index: 1;
+}
+
+.box-author img {
+    width: 70px;
+}
+
+.box-author-name {
+    font-family: 'Lobster', cursive;
+    font-size: 14px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 16px;
+    right: 25px;
+    background: red;
+    color: white;
+    z-index: 2;
+}
+
+.box-title {
+    margin: 0;
+    border-bottom: inherit;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.box-image {
+    padding: 10px;
+    float: left;
+}
+
+.box-content {
+    padding: 16px;
+    line-height: 24px;
+}
+
+.top-page {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.top-page img {
+    width: 50px;
+    opacity: 0.3;
+    transition: opacity 0.4s ease;
+}
+
+.top-page img:hover {
+    opacity: 1;
+}

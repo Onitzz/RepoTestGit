@@ -1,0 +1,43 @@
+.flex-container {
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    border: 2px solid #666;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.flex-square {
+    width: 80px;
+    height: 80px;
+    background-color: lightblue;
+    border: 2px solid #666;
+    color:white;
+    
+}
+
+.flex-square-blue {
+    background: indigo;
+    align-self: baseline;
+    flex-grow: 1;
+}
+
+.flex-square-red {
+    background: firebrick;
+}
+
+.flex-square-green {
+    background: yellowgreen;
+}
+
+.flex-square-purple {
+    background: mediumorchid;
+}
+
+.flex-square-orange {
+    background: orange;
+    flex-grow: 1;
+}
