@@ -1,0 +1,43 @@
+body {
+    font: 16px Tahoma, Arial, sans-serif;
+}
+
+.box {
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    transition: box-shadow .3s ease;
+}
+
+.box:hover{
+    box-shadow: 1px 1px 5px #ccc;
+}
+
+.box-red {
+    border-color: rgb(209, 31, 8);
+}
+
+.box-red .box-title {
+    background-color: rgb(209, 31, 8);
+    color:white;
+}
+
+.box-blue {
+    border-color: rebeccapurple;
+}
+
+.box-blue .box-title {
+    background-color: rebeccapurple;
+    color:white;
+}
+
+.box-title {
+    margin: 0;
+    border-bottom: inherit;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.box-content {
+    padding: 10px;
+}
