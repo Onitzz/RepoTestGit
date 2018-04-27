@@ -24,7 +24,7 @@ a {
 
 .navbar a {
     display: block;
-    padding:0 10px;
+    padding: 0 10px;
     transition: all .3s;
 }
 
@@ -37,13 +37,145 @@ a {
  * HEADER SKY
  */
 
- .sky {
-     background: linear-gradient(#6c9eeb,#ff846e);
-     height: 300px;
-     background-repeat: no-repeat;
-     color:#fff;
- }
+.sky {
+    background: linear-gradient(#60b0f1, #eea69a);
+    height: 300px;
+    background-repeat: no-repeat;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
 
- .sky-title {
-     margin: 0;
- }
+.sky-title {
+    position: relative;
+    font-size: 40px;
+    margin: 0 10px;
+    line-height: 300px;
+    text-shadow: -4px 4px 1px rgba(0, 0, 0, 0.185), -8px 8px 1px rgba(0, 0, 0, 0.075);
+    z-index: 4;
+}
+
+.sky-img1 {
+    position: absolute;
+    top: 40px;
+    width: 450px;
+    left: 30px;
+    animation-name: img1MoveLTR;
+    animation-duration: 18s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    z-index: 5;
+}
+
+.sky-img2 {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    opacity: 0.7;
+    animation-name: img2MoveRTL;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    z-index: 2;
+}
+
+.sky-img3 {
+    position: absolute;
+    top: 40px;
+    width: 180px;
+    right: 50px;
+    opacity: 0.7;
+    animation-name: img2MoveRTL;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    z-index: 1;
+}
+
+@keyframes img1MoveLTR {
+    from {
+        transform: translateX(-570px);
+    }
+    to {
+        transform: translateX(320px);
+    }
+}
+
+@keyframes img2MoveRTL {
+    from {
+        transform: translateX(530px);
+    }
+    to {
+        transform: translateX(-320px);
+    }
+}
+
+@keyframes img3MoveRTL {
+    from {
+        transform: translateX(330px);
+    }
+    to {
+        transform: translateX(-320px);
+    }
+}
+
+.container {
+    background-color: #F0F0F0;
+    padding: 10px;
+}
+
+.content {}
+
+.content article {
+    padding: 0.625em;
+    border: 0.0625em solid #ccc;
+    background-color: #fff;
+    margin-bottom: 0.625em;
+}
+
+.content article:last-child {
+    margin: 0;
+}
+
+.container aside.sidebar {
+    background: #fff;
+    margin-top: 0.625em;
+    padding: 0.625em;
+    border: 0.0625em solid #ccc;
+}
+
+.menu a {
+    display: block;
+}
+
+.footer {
+    background-color: rgb(34, 46, 65);
+    color: #CCC;
+}
+
+@media screen and (min-width: 48em) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .content {
+        flex-basis: calc(70% - 0.9375em);
+        order: 1;
+    }
+    .container aside.sidebar {
+        flex-basis: calc(30% - 0.9375em);
+        margin-top: 0;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .associate, .network, .newsletter {
+        width: 15.625em;
+    }
+}
+
+@media screen and (min-width: 1024px) {}
